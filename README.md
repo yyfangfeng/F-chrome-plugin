@@ -1,4 +1,4 @@
-# FFF-switch 开发须知
+# F-chrome-plugin 开发须知
 
 ## manifest.json 配置
 
