@@ -1,0 +1,31 @@
+{
+	"name": "F-chrome-plugin",
+	"manifest_version": 2,
+	"version": "1.0",
+	"description": "用于快速构建开发自己的 chrome 插件",
+	"browser_action": {
+		"default_icon": "public/img/F_switch.png",
+		"default_popup": "html/popup.html"
+	},
+	"permissions": [
+		"storage"
+	],
+	"icons": {
+		"128": "public/img/F_switch.png"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www.baidu.com/*",
+				"https://baijiahao.baidu.com/*",
+				"https://tieba.baidu.com/*"
+			],
+			"js": [
+				"public/js/jquery-3.1.1.min.js", "public/js/util.js",
+				"script/add_code.js", "script/clock_in.js", "script/hide_img.js",
+				"config.js", "html/popup.js", "script.js"
+			],
+			"run_at": "document_start"
+		}
+	]
+}
