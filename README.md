@@ -30,8 +30,7 @@
 	"content_scripts": [
 		{
 			"matches": [
-                "https://www.baidu.com/*",
-                ...
+                "https://www.baidu.com/*"
 			],
 			"js": [
 				"public/js/jquery-3.1.1.min.js", "public/js/util.js",
